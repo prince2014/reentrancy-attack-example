@@ -1,0 +1,80 @@
+{
+  "contractName": "HoneyPotCollect",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "kill",
+      "outputs": [],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "collect",
+      "outputs": [],
+      "payable": true,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "honeypot",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "name": "_honeypot",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "type": "constructor"
+    },
+    {
+      "payable": true,
+      "type": "fallback"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.4.8+commit.60cc1668.Emscripten.clang\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":false,\"inputs\":[],\"name\":\"kill\",\"outputs\":[],\"payable\":false,\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"collect\",\"outputs\":[],\"payable\":true,\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"honeypot\",\"outputs\":[{\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"type\":\"function\"},{\"inputs\":[{\"name\":\"_honeypot\",\"type\":\"address\"}],\"payable\":false,\"type\":\"constructor\"},{\"payable\":true,\"type\":\"fallback\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/home/prince/Desktop/defi/honeyPotReentranceAttack/contracts/HoneyPotCollect.sol\":\"HoneyPotCollect\"},\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/home/prince/Desktop/defi/honeyPotReentranceAttack/contracts/HoneyPot.sol\":{\"keccak256\":\"0x15cfcdc22d65ea7b80b26b460fda9f365b7c9562d4476f4faa0d8eb2f5a317c8\",\"urls\":[\"bzzr://ac2a03eaae35991a0ff6a27b2a425663d25245ba2966d2404236ca48c94da6cc\"]},\"/home/prince/Desktop/defi/honeyPotReentranceAttack/contracts/HoneyPotCollect.sol\":{\"keccak256\":\"0xba245c49396e55ad7ef6054b62e9196a1a4cff866a9576b790f724c0334112ed\",\"urls\":[\"bzzr://65ddf4068a947ef91050884037d80e4676020d45dcbc72739ac82249a6632731\"]},\"/home/prince/Desktop/defi/honeyPotReentranceAttack/contracts/Migrations.sol\":{\"keccak256\":\"0x9fb79f97cb2c799d2e01624c2276a7eba35c239f11d66375aa96ca73fc378d6c\",\"urls\":[\"bzzr://5913ce695f62e8392537307488574115a54c8017eb1204f639ed8a6ff4c8bc6f\"]}},\"version\":1}",
+  "bytecode": "0x606060405234610000576040516020806103a1833981016040528080519060200190919050505b80600060006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055505b505b610328806100796000396000f30060606040523615610055576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806341c0e1b514610130578063e52253811461013f578063ef89aff314610149575b61012e5b34600060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163110151561012b57600060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16636d4ce63c6040518163ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401809050600060405180830381600087803b156100005760325a03f115610000575050505b5b565b005b346100005761013d610198565b005b6101476101b3565b005b34610000576101566102d6565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b3373ffffffffffffffffffffffffffffffffffffffff16ff5b565b600060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1663549262ba346040518263ffffffff167c01000000000000000000000000000000000000000000000000000000000281526004018090506000604051808303818588803b156100005761235a5a03f1156100005750505050600060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16636d4ce63c6040518163ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401809050600060405180830381600087803b156100005760325a03f115610000575050505b565b600060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16815600a165627a7a7230582039e91207aedb8ce51917ea88f861533b18e9923aa3353b6f48bfb3073630c8540029",
+  "deployedBytecode": "0x60606040523615610055576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806341c0e1b514610130578063e52253811461013f578063ef89aff314610149575b61012e5b34600060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163110151561012b57600060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16636d4ce63c6040518163ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401809050600060405180830381600087803b156100005760325a03f115610000575050505b5b565b005b346100005761013d610198565b005b6101476101b3565b005b34610000576101566102d6565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b3373ffffffffffffffffffffffffffffffffffffffff16ff5b565b600060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1663549262ba346040518263ffffffff167c01000000000000000000000000000000000000000000000000000000000281526004018090506000604051808303818588803b156100005761235a5a03f1156100005750505050600060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16636d4ce63c6040518163ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401809050600060405180830381600087803b156100005760325a03f115610000575050505b565b600060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16815600a165627a7a7230582039e91207aedb8ce51917ea88f861533b18e9923aa3353b6f48bfb3073630c8540029",
+  "sourceMap": "51:388:1:-;;;109:86;;;;;;;;;;;;;;;;;;;;;;;;;;180:9;160:8;;:30;;;;;;;;;;;;;;;;;;109:86;;51:388;;;;;;;",
+  "deployedSourceMap": "51:388:1:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;343:94;393:9;373:8;;;;;;;;;;;:16;;;:29;;369:64;;;412:8;;;;;;;;;;;:12;;;:14;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;369:64;343:94;:::o;51:388::-;;199:47;;;;;;;;;250:89;;;;;;80:24;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;199:47;230:10;222:19;;;199:47;:::o;250:89::-;283:8;;;;;;;;;;;:12;;;302:9;283:31;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;320:8;;;;;;;;;;;:12;;;:14;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;250:89;:::o;80:24::-;;;;;;;;;;;;;:::o",
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.8+commit.60cc1668.Emscripten.clang"
+  },
+  "networks": {
+    "5777": {
+      "events": {},
+      "links": {},
+      "address": "0xab066761Fc1E78714AD22AF58C44d4896D688513",
+      "transactionHash": "0x2093e31605f492f542fc3614d4b0c3fcda64cf5c625d15c78249b933fcab725c"
+    },
+    "1495287193062": {
+      "links": {},
+      "events": {},
+      "updated_at": 1495291119041,
+      "address": "0xe2b6e346c163eedafa29188ce72b7bab9572cdad"
+    },
+    "1495291618897": {
+      "events": {},
+      "links": {},
+      "address": "0x66663bea2875e1dd14726ab491de1eb654c8881a",
+      "updated_at": 1495292342482
+    }
+  },
+  "schemaVersion": "3.4.1",
+  "updatedAt": "2021-07-04T08:44:13.093Z",
+  "networkType": "ethereum"
+}
